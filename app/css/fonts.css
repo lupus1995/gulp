@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "BookmanOldStyle";
+  src: url("../fonts/BookmanOldStyle.eot?") format("eot"), url("../fonts/BookmanOldStyle.woff2") format("woff2"), url("../fonts/BookmanOldStyle.woff") format("woff"), url("../fonts/BookmanOldStyle.ttf") format("truetype"), url("../fonts/BookmanOldStyle.svg#Samplino") format("svg"); }
+
+@font-face {
+  font-family: "PFDinTextCondPro-Light";
+  src: url("../fonts/PFDinTextCondPro-Light.eot?") format("eot"), url("../fonts/PFDinTextCondPro-Light.woff2") format("woff2"), url("../fonts/PFDinTextCondPro-Light.woff") format("woff"), url("../fonts/PFDinTextCondPro-Light.ttf") format("truetype"), url("../fonts/PFDinTextCondPro-Light.svg#Samplino") format("svg"); }
+
+@font-face {
+  font-family: "pfdintextpro-bold";
+  src: url("../fonts/pfdintextpro-bold.eot?") format("eot"), url("../fonts/pfdintextpro-bold.woff2") format("woff2"), url("../fonts/pfdintextpro-bold.woff") format("woff"), url("../fonts/pfdintextpro-bold.ttf") format("truetype"), url("../fonts/pfdintextpro-bold.svg#Samplino") format("svg"); }
+
+@font-face {
+  font-family: "pfdintextpro-light";
+  src: url("../fonts/pfdintextpro-light.eot?") format("eot"), url("../fonts/pfdintextpro-light.woff2") format("woff2"), url("../fonts/pfdintextpro-light.woff") format("woff"), url("../fonts/pfdintextpro-light.ttf") format("truetype"), url("../fonts/pfdintextpro-light.svg#Samplino") format("svg"); }
+
+@font-face {
+  font-family: "pfdintextpro-medium";
+  src: url("../fonts/pfdintextpro-medium.eot?") format("eot"), url("../fonts/pfdintextpro-medium.woff2") format("woff2"), url("../fonts/pfdintextpro-medium.woff") format("woff"), url("../fonts/pfdintextpro-medium.ttf") format("truetype"), url("../fonts/pfdintextpro-medium.svg#Samplino") format("svg"); }
+
+.BookmanOldStyle {
+  font-family: "BookmanOldStyle"; }
+
+.PFDinTextCondPro-Light {
+  font-family: "PFDinTextCondPro-Light"; }
+
+.pfdintextpro-bold {
+  font-family: "pfdintextpro-bold"; }
+
+.pfdintextpro-light {
+  font-family: "pfdintextpro-light"; }
+
+.pfdintextpro-medium {
+  font-family: "pfdintextpro-medium"; }

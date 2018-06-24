@@ -1,0 +1,36 @@
+@mixin fontface($nameFont)
+  @font-face 
+    font-family: $nameFont;
+    src: url("../fonts/#{$nameFont}.eot?") format("eot"),
+    url("../fonts/#{$nameFont}.woff2") format("woff2"),
+    url("../fonts/#{$nameFont}.woff") format("woff"),
+    url("../fonts/#{$nameFont}.ttf") format("truetype"),
+    url("../fonts/#{$nameFont}.svg#Samplino") format("svg")
+
+
+
+@mixin nameFont($nameFont)
+  .#{$nameFont}
+    font-family: $nameFont;
+
+$BookmanOldStyle : "BookmanOldStyle";
+$PFDinTextCondPro-Light: "PFDinTextCondPro-Light";
+$pfdintextpro-bold: "pfdintextpro-bold";
+$pfdintextpro-light: "pfdintextpro-light";
+$pfdintextpro-medium: "pfdintextpro-medium"
+
+
+@include fontface($BookmanOldStyle)
+@include fontface($PFDinTextCondPro-Light)
+@include fontface($pfdintextpro-bold)
+@include fontface($pfdintextpro-light)
+@include fontface($pfdintextpro-medium)
+
+
+@include nameFont($BookmanOldStyle)
+@include nameFont($PFDinTextCondPro-Light)
+@include nameFont($pfdintextpro-bold)
+@include nameFont($pfdintextpro-light)
+@include nameFont($pfdintextpro-medium)
+
+

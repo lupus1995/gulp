@@ -1,0 +1,23 @@
+{
+  "name": "bower",
+  "description": "Сборка для работа фронта",
+  "main": "gulpfile.js",
+  "directory" : "bower",
+  "authors": [
+    "lupus1995 <canya.panfilov.95@mail.ru>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lupus1995/gulp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome-sass": "4.7.0",
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
