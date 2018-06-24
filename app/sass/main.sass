@@ -1,11 +1,16 @@
 $font-size: 14px;
 $font-size-big: 18px;
-$color-title: #13191f;
+$font-size-subtutle: 30px;
+$color-dark-blue: #13191f;
 $color-green: #71b100;
 $color-red: #f16468;
-$border-color: #c2db97;
+$color-blue: #17b2e6;
+$color-gray: #a6a6a6;
+$color-dark-gray: #adafb1;
+$color-light-green: #c2db97;
 
-p
+
+p, h2
   margin-bottom: 0
 
 button
@@ -18,13 +23,16 @@ ul
 
 h1
   font-size: 36px;
-  color: $color-title;
+  color: $color-dark-blue;
   padding-top: 95px;
   padding-bottom: 12px
 
 h2
   font-size: $font-size-big;
-  color: $color-title;
+  color: $color-dark-blue;
+
+h2.subtitle
+  font-size: $font-size-subtutle;
 
 
 
@@ -40,7 +48,7 @@ h2
   min-height: 60px;
 
 .header-blue
-  background-color: #17b2e6;
+  background-color: $color-blue;
 
 .header-text
   font-size: $font-size;
@@ -94,17 +102,18 @@ h2
     margin: 0 auto 24px;
   & span
     font-size: $font-size;
-    color: $color-title;
+    color: $color-dark-blue;
     display: inline-block;
     line-height: 14px
 
 .border_dot_green
   min-height: 1px;
-  border: 1px dotted $border-color;
+  border: 1px dotted $color-light-green;
   margin: 35px 0;
 
 .one
   position: relative;
+  min-height: 690px;
   &::before
     content: "";
     position: absolute;
@@ -116,17 +125,17 @@ h2
     background-position: center;
     background-size: cover;
   & p
-    color: $color-title;
-  
+    color: $color-dark-blue;
+
 
 .border-h1_top
   width: 624px;
-  border-bottom: 2px solid #17b2e6;
+  border-bottom: 2px solid $color-blue;
   margin: 0 auto 2px;
 
 .border-h1_bottom
   width: 340px;
-  border-bottom: 1px solid #17b2e6;
+  border-bottom: 1px solid $color-blue;
   margin: 0 auto 80px;  
 
 .search-code 
@@ -156,3 +165,84 @@ h2
   position: relative;
   left: -25px;
   top: 2px
+
+
+
+.two-title-container
+  padding: 35px 0;
+  background-color: #d1f0fa;
+
+.request-call
+  background-color: #eaeaeb;
+  padding-bottom: 32px;
+  & input
+    width: 100%;
+    background: none;
+    border: 2px solid #a9abae;
+    height: 46px;
+
+    padding-left: 20px;
+    border-radius: 25px;
+    font-size: $font-size;
+    color: $color-dark-blue;
+    margin: 32px 0;
+  & button
+    background-color: $color-blue
+    color: #fff;
+    font-size: $font-size-big;
+    width: 260px;
+    height: 45px;
+    margin: 0 auto;
+    display: block;
+
+.three
+  padding-bottom: 50px;
+  & h2
+    margin: 30px 0;
+  & p
+    font-size: $font-size;
+  & img
+    display: block;
+    margin: 0 auto;
+
+.result-title
+  font-size: $font-size-big;
+  color: $color-dark-blue;
+  display: block;
+
+.border_dot_gray
+  min-height: 1px;
+  border: 1px dotted $color-gray;
+  margin: 21px 0;
+
+.border-line-gray
+  min-height: 1px;
+  border: 1px solid $color-dark-gray;
+  margin-top: 22px;
+
+.line-gray
+  background-color: $color-dark-gray;
+  height: 1px;
+  width: 48px;
+  display: block;
+  transform: rotate(90deg);
+  margin: 8px auto 0;
+
+.line-gray_mt22
+  margin-top: 22px;
+
+.circle-green
+  width: 14px;
+  height: 14px;
+  background-color: $color-green;
+  display: block;
+  border-radius: 25px;
+  margin: 23px auto 15px;
+
+.description_img
+  color: #000610;
+  display: block;
+  line-height: 18px;
+  margin: 20px auto 8px;
+  font-size: $font-size-big
+

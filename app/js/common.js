@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	console.log(123);
+	$("#request-call input[type='phone']").mask("(999) 999-9999");
 });
