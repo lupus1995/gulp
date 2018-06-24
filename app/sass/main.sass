@@ -1,0 +1,158 @@
+$font-size: 14px;
+$font-size-big: 18px;
+$color-title: #13191f;
+$color-green: #71b100;
+$color-red: #f16468;
+$border-color: #c2db97;
+
+p
+  margin-bottom: 0
+
+button
+  background: none;
+  border: none;
+
+ul
+  padding-left: 0;
+  margin-bottom: 0
+
+h1
+  font-size: 36px;
+  color: $color-title;
+  padding-top: 95px;
+  padding-bottom: 12px
+
+h2
+  font-size: $font-size-big;
+  color: $color-title;
+
+
+
+.max-container
+  max-width: 1200px;
+  margin: 0 auto;
+
+.button-size 
+  min-width: 190px;
+  min-height: 34px;
+
+.header-row
+  min-height: 60px;
+
+.header-blue
+  background-color: #17b2e6;
+
+.header-text
+  font-size: $font-size;
+  color: #fff;
+  display: inline-block
+
+.header-text_big
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  padding-right: 30px
+
+.header-text_pr
+  padding-right: 24px
+
+.header-icon_pr
+  display: inline-block
+  padding-right: 8px
+
+.header-button
+  background-color: $color-green;
+  // padding: 5.5px 32px;
+  border: 1px solid;
+
+
+
+.nav-height
+  min-height: 77px;
+
+.nav-items
+  display: inline-block
+  &::after
+    content: ":";
+    margin: 0 20px;
+  &:last-of-type
+    margin-bottom: 10px;
+    &::after
+      content: "";
+      margin: 0;
+  & a
+    color: #0a1018;
+
+.nav-button
+  background-color: $color-red;
+  margin-left: 33px
+
+
+.description_of_protection
+  & img
+    display: block;
+    margin: 0 auto 24px;
+  & span
+    font-size: $font-size;
+    color: $color-title;
+    display: inline-block;
+    line-height: 14px
+
+.border_dot_green
+  min-height: 1px;
+  border: 1px dotted $border-color;
+  margin: 35px 0;
+
+.one
+  position: relative;
+  &::before
+    content: "";
+    position: absolute;
+    width: 100%;
+    opacity: .46;
+    min-height: 690px;
+    background-repeat: no-repeat;
+    background-image: url("../img/block1/bg1.png");
+    background-position: center;
+    background-size: cover;
+  & p
+    color: $color-title;
+  
+
+.border-h1_top
+  width: 624px;
+  border-bottom: 2px solid #17b2e6;
+  margin: 0 auto 2px;
+
+.border-h1_bottom
+  width: 340px;
+  border-bottom: 1px solid #17b2e6;
+  margin: 0 auto 80px;  
+
+.search-code 
+  margin-top: 30px;
+  margin-bottom: 25px;
+  & input
+    width: 570px;
+    height: 47px;
+    border: 2px solid #13191f;
+    border-radius: 25px;
+    padding-left: 28px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    & ::-webkit-input-placeholder,
+    & :-moz-placeholder,
+    & ::-moz-placeholder,
+    & :-ms-input-placeholder
+      opacity: .46;
+
+.search-code button
+  background-color: $color-green;
+  font-size: $font-size-big;
+  color: #fff;
+  width: 250px;
+  height: 47px;
+  position: relative;
+  left: -25px;
+  top: 2px
