@@ -19,6 +19,7 @@
   "dependencies": {
     "font-awesome-sass": "4.7.0",
     "bootstrap": "v4.0.0-alpha.6",
-    "jquery.maskedinput": "^1.4.1"
+    "jquery.maskedinput": "^1.4.1",
+    "slick-carousel": "^1.8.1"
   }
 }
