@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p, h2 {
   margin-bottom: 0; }
 
@@ -402,3 +403,8 @@ h2.subtitle {
   color: #fff;
   height: 40px;
   width: 30px; }
+=======
+body {
+  background-color: #000;
+  color: #fff; }
+>>>>>>> cc263d8b10153d3be0ebbfe51ee4a836d15bfbd8

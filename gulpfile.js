@@ -7,22 +7,22 @@ var browserSync = require('browser-sync').create();
 //scss
 
 gulp.task('sass', function () {
-  return gulp.src(['app/sass/**/*.scss', 'app/sass/**/*.sass'])
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('app/css'));
+  return gulp.src('app/sass/**/*.sass')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('app/css'));
 });
 
 
 //browser sync
 gulp.task('serve', ['sass'], function() {
 
-    browserSync.init({
-        server: "app"
-    });
+  browserSync.init({
+    server: "app"
+  });
 
-    gulp.watch("app/sass/*.*", ['sass']).on('change', browserSync.reload);
-    gulp.watch("app/*.html").on('change', browserSync.reload);
-    gulp.watch("app/js/*.js").on('change', browserSync.reload);
+  gulp.watch("app/sass/*.*", ['sass']).on('change', browserSync.reload);
+  gulp.watch("app/*.html").on('change', browserSync.reload);
+  gulp.watch("app/js/*.js").on('change', browserSync.reload);
 });
 
 
@@ -30,22 +30,22 @@ gulp.task('serve', ['sass'], function() {
 var ttf2woff = require('gulp-ttf2woff');
 var ttf2eot = require('gulp-ttf2eot');
 var ttf2woff2 = require('gulp-ttf2woff2');
- 
+
 gulp.task('fonts', function(){
   gulp.src(['app/fonts/*.ttf'])
-    .pipe(ttf2woff())
-    .pipe(gulp.dest('app/fonts/'));
+  .pipe(ttf2woff())
+  .pipe(gulp.dest('app/fonts/'));
 
   gulp.src(['app/fonts/*.ttf'])
-    .pipe(ttf2eot())
-    .pipe(gulp.dest('app/fonts/'));
+  .pipe(ttf2eot())
+  .pipe(gulp.dest('app/fonts/'));
 
   gulp.src(['app/fonts/*.ttf'])
-    .pipe(ttf2woff2())
-    .pipe(gulp.dest('app/fonts/'));
+  .pipe(ttf2woff2())
+  .pipe(gulp.dest('app/fonts/'));
 
   gulp.src(['app/fonts/*.*']).
-    pipe(gulp.dest("dist/fonts"));
+  pipe(gulp.dest("dist/fonts"));
 })
 
 
@@ -57,16 +57,16 @@ var uglify = require('gulp-uglify');
 var pump = require('pump');
 
 gulp.task('production', function () {
-    gulp.src('app/css/**/*.css')
-        .pipe(cssmin())
-        .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('dist/css'));
+  gulp.src('app/css/**/*.css')
+  .pipe(cssmin())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('dist/css'));
 
 
-        gulp.src('app/js/**/*.js')
-        .pipe(uglify()).
-        pipe(gulp.dest('dist/js'))
-    
+  gulp.src('app/js/**/*.js')
+  .pipe(uglify()).
+  pipe(gulp.dest('dist/js'))
+  
 });
 
 
